@@ -3,7 +3,6 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import {notFound} from 'next/navigation';
 import React from 'react';
-import ThemeRegistry from '@/theme/ThemeRegistry';
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -25,7 +24,7 @@ export default async function LocaleLayout({children, params: {locale}}: {childr
   return (
     <html lang={locale}>
       <body>
-        <ThemeRegistry options={{ key: 'mui' }}>{children}</ThemeRegistry>
+        {children}
       </body>
     </html>
   );
