@@ -1,5 +1,3 @@
-'use client';
-
 import { List, ListItem, Typography } from "@mui/material";
 
 const getUsers = async () => {
